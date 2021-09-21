@@ -1,14 +1,16 @@
 print("STUDENTS AVERAGE CALCULATOR")
 print("     Passed Or Failed      ")
-print("Prelim Grade    : ")
-prg = int(input())
-print("Midterm Grade   : ")
-mdg = int(input())
-print("SemiFinal Grade : ")
-sfg = int(input())
-print("Final Grade     : ")
-fg = int(input())
+prg = int(input("Prelim    Grade  :  "))
+mdg = int(input("Midterm   Grade  :  "))
+sfg = int(input("SemiFinal Grade  :  "))
+fg  = int(input("Final     Grade  :  "))
 
 sum = (prg + mdg + sfg + fg)
-avg = sum/4
-print("Average Grade is {}.".format(avg))
+avg = float(sum/4)
+print(" ")
+print("Average Grade is {}.".format((avg)))
+print(" ")
+if avg >= 75:
+    print("You passed! Congrats Inamers")
+else:
+    print("You Failed! BOBO KA!")
